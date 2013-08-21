@@ -1,6 +1,7 @@
 Qr code service provider for silex
 ======================
 
+[![Build Status](https://travis-ci.org/gonzalo123/qrserviceprovider.png?branch=master)](https://travis-ci.org/gonzalo123/qrserviceprovider)
 
 ## Requirements
 
