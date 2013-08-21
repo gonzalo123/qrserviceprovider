@@ -13,7 +13,7 @@ Qr code service provider for silex
 ``` js
 {
     "require": {
-        "endroid/qrcode-bundle": "dev-master"
+        "gonzalo123/qrserviceprovider": "dev-master"
     }
 }
 ```
@@ -22,7 +22,7 @@ Qr code service provider for silex
 ```php
 <?php
 
-include __DIR__ . '/../vendor/autoload.php';
+include __DIR__ . '/vendor/autoload.php';
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
