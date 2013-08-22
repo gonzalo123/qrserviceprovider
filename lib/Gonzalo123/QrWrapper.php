@@ -13,6 +13,8 @@ class QrWrapper
     private $padding;
     private $imageType;
 
+    const DEFAULT_TYPE = 'png';
+
     public function __construct(QrCode $qrCode)
     {
         $this->qrCode = $qrCode;
@@ -62,7 +64,7 @@ class QrWrapper
 
     private function getMimeTypeFromType($type)
     {
-        $type = $type == '' ? 'png': $type;
+        $type = $type == '' ? self::DEFAULT_TYPE : $type;
         return 'image/' . str_replace('jpg', 'jpeg', $type);
     }
 }
