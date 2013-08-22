@@ -26,7 +26,6 @@ use Silex\Application;
 use Gonzalo123\QrServiceProvider;
 
 $app = new Application();
-$app['debug'] = true;
 
 $app->register(new QrServiceProvider(), [
     'qr.defaults' => [
