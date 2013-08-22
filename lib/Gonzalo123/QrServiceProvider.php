@@ -1,5 +1,7 @@
 <?php
 
+namespace Gonzalo123;
+
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 use Endroid\QrCode\QrCode;

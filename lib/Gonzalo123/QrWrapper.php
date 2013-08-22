@@ -1,5 +1,7 @@
 <?php
 
+namespace Gonzalo123;
+
 use Endroid\QrCode\QrCode;
 use Symfony\Component\HttpFoundation\Response;
 

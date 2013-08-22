@@ -3,8 +3,7 @@
 include __DIR__ . '/../vendor/autoload.php';
 
 use Silex\Application;
-use Silex\ServiceProviderInterface;
-use Endroid\QrCode\QrCode;
+use Gonzalo123\QrServiceProvider;
 
 $app = new Application();
 $app['debug'] = true;
