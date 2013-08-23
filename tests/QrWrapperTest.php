@@ -57,7 +57,7 @@ class QrWrapperTest extends PHPUnit_Framework_TestCase
 
         $qrCode->expects($this->any())->method('get')->will($this->returnValue("hello"));
         $wrapper = new QrWrapper($qrCode);
-        $wrapper->setImageType('jpg');
+        $wrapper->setImageType('jpeg');
 
         $response = $wrapper->getResponse();
 
