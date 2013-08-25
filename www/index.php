@@ -3,7 +3,7 @@
 include __DIR__ . '/../vendor/autoload.php';
 
 use Silex\Application;
-use Gonzalo123\QrServiceProvider;
+use G\QrServiceProvider;
 
 $app = new Application();
 $app['debug'] = true;

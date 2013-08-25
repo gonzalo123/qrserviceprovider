@@ -1,7 +1,7 @@
 <?php
 
 use Symfony\Component\HttpFoundation\Response;
-use Gonzalo123\QrWrapper;
+use G\QrWrapper;
 
 class QrWrapperTest extends PHPUnit_Framework_TestCase
 {
@@ -13,7 +13,7 @@ class QrWrapperTest extends PHPUnit_Framework_TestCase
 
         $wrapper = new QrWrapper($qrCode);
 
-        $this->assertInstanceOf('Gonzalo123\QrWrapper', $wrapper);
+        $this->assertInstanceOf('G\QrWrapper', $wrapper);
     }
 
     public function testGetResponseWithDefaultParamenters()

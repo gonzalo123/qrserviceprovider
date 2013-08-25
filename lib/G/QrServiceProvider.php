@@ -1,6 +1,6 @@
 <?php
 
-namespace Gonzalo123;
+namespace G;
 
 use Silex\Application;
 use Silex\ServiceProviderInterface;
