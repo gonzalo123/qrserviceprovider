@@ -16,11 +16,16 @@ class QrWrapperTest extends PHPUnit_Framework_TestCase
         $this->assertInstanceOf('G\QrWrapper', $wrapper);
     }
 
+    private function getQrMock()
+    {
+        return $this->getMockBuilder('Endroid\QrCode\QrCode')
+            ->disableOriginalConstructor()
+            ->getMock();
+    }
+
     public function testGetResponseWithDefaultParameters()
     {
-        $qrCode = $this->getMockBuilder('Endroid\QrCode\QrCode')
-                ->disableOriginalConstructor()
-                ->getMock();
+        $qrCode = $this->getQrMock();
 
         $qrCode->expects($this->any())->method('get')->will($this->returnValue("hello"));
         $wrapper = new QrWrapper($qrCode);
@@ -34,9 +39,7 @@ class QrWrapperTest extends PHPUnit_Framework_TestCase
 
     public function testGetResponseForJpg()
     {
-        $qrCode = $this->getMockBuilder('Endroid\QrCode\QrCode')
-                ->disableOriginalConstructor()
-                ->getMock();
+        $qrCode = $this->getQrMock();
 
         $qrCode->expects($this->any())->method('get')->will($this->returnValue("hello"));
         $wrapper = new QrWrapper($qrCode);
@@ -51,9 +54,7 @@ class QrWrapperTest extends PHPUnit_Framework_TestCase
 
     public function testGetResponseForJpeg()
     {
-        $qrCode = $this->getMockBuilder('Endroid\QrCode\QrCode')
-                ->disableOriginalConstructor()
-                ->getMock();
+        $qrCode = $this->getQrMock();
 
         $qrCode->expects($this->any())->method('get')->will($this->returnValue("hello"));
         $wrapper = new QrWrapper($qrCode);
