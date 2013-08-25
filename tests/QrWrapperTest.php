@@ -16,7 +16,7 @@ class QrWrapperTest extends PHPUnit_Framework_TestCase
         $this->assertInstanceOf('G\QrWrapper', $wrapper);
     }
 
-    public function testGetResponseWithDefaultParamenters()
+    public function testGetResponseWithDefaultParameters()
     {
         $qrCode = $this->getMockBuilder('Endroid\QrCode\QrCode')
                 ->disableOriginalConstructor()
