@@ -23,7 +23,7 @@ Qr code service provider for silex
 
 ```php
 use Silex\Application;
-use Gonzalo123\QrServiceProvider;
+use G\QrServiceProvider;
 
 $app = new Application();
 
