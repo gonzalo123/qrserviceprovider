@@ -1,28 +1,38 @@
 {
-    "name":"gonzalo123/qrserviceprovider",
-    "description":"QR code service provider for silex using endroid/qrcode",
-    "license":"MIT",
-    "keywords":["silex", "qrcode", "qr"],
+    "name": "gonzalo123/qrserviceprovider",
+    "description": "QR code service provider for silex using endroid/qrcode",
+    "license": "MIT",
+    "keywords": [
+        "silex",
+        "qrcode",
+        "qr"
+    ],
 
-    "authors":[
+    "authors": [
         {
-            "name":"Gonzalo Ayuso",
-            "email":"gonzalo123@gmail.com"
+            "name": "Gonzalo Ayuso",
+            "email": "gonzalo123@gmail.com"
         }
     ],
-    "require":{
-        "silex/silex":"v1.1.2",
-        "endroid/qrcode":">=1.1.3"
+
+    "require": {
+        "silex/silex": "2.0.*@dev",
+        "endroid/qrcode": ">=1.1.3"
     },
-    "require-dev":{
-        "phpunit/phpunit":">=3.7.24"
-    },
-    "autoload":{
-        "psr-0":{
-            "G":"src/"
+
+    "autoload": {
+        "psr-4": {
+            "G\\": "src/"
         }
     },
-    "config":{
-        "bin-dir":"bin"
+
+    "config": {
+        "bin-dir": "bin"
+    },
+
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
     }
 }
