@@ -8,7 +8,7 @@ use Endroid\QrCode\QrCode;
 
 class QrServiceProvider implements ServiceProviderInterface
 {
-    public function register(Container $app)
+    public function register(Application $app)
     {
         $app['qrCode'] = $app->protect(function ($text, $size = null) use ($app) {
             $default = $app['qr.defaults'];
