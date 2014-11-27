@@ -5,7 +5,6 @@ namespace G;
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 use Endroid\QrCode\QrCode;
-use Pimple\Container;
 
 class QrServiceProvider implements ServiceProviderInterface
 {
