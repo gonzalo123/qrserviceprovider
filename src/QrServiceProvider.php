@@ -3,7 +3,7 @@
 namespace G;
 
 use Silex\Application;
-use Pimple\ServiceProviderInterface;
+use Silex\ServiceProviderInterface;
 use Endroid\QrCode\QrCode;
 use Pimple\Container;
 
