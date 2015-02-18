@@ -2,13 +2,13 @@
 
 namespace G;
 
-use Silex\Application;
-use Silex\ServiceProviderInterface;
+use Pimple\Container;
+use Pimple\ServiceProviderInterface;
 use Endroid\QrCode\QrCode;
 
 class QrServiceProvider implements ServiceProviderInterface
 {
-    public function register(Application $app)
+    public function register(Container $app)
     {
         $app['qrCode'] = $app->protect(function ($text, $size = null) use ($app) {
             $default = $app['qr.defaults'];
@@ -23,7 +23,7 @@ class QrServiceProvider implements ServiceProviderInterface
         });
     }
 
-    public function boot(Application $app)
+    public function boot(Container $app)
     {
     }
 }
